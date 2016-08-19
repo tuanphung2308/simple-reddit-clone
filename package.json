@@ -1,8 +1,9 @@
 {
-  "name": "ng-book2-hello-world",
+  "name": "ng-book2-reddit",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "clean": "rm -f ./app*.js; rm -f ./*.js.map",
+    "clean": "rm -f ./*.js; rm -f ./*.js.map; rm -f ./intermediates/*.js; rm -f ./intermediates/*.js.map",
     "tsc": "./node_modules/.bin/tsc",
     "tsc:w": "./node_modules/.bin/tsc -w",
     "serve": "./node_modules/.bin/live-server --host=localhost --port=8080 .",
@@ -27,12 +28,12 @@
     "ts-helpers": "1.1.1",
     "tslint": "3.7.0-dev.2",
     "typescript": "1.9.0-dev.20160409",
+    "typings": "0.8.1",
     "zone.js": "0.6.12"
   },
   "devDependencies": {
     "concurrently": "1.0.0",
     "live-server": "0.9.0",
-    "typescript": "1.7.3",
-    "typings": "0.8.1"
+    "typescript": "1.7.3"
   }
 }
